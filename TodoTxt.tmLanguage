@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>txt</string>
+	</array>
+	<key>name</key>
+	<string>Todo.txt Syntax</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Todo item priority (can be set to A-E in the mobile application; should be enough for now)</string>
+			<key>match</key>
+			<string>^\([A-E]\)</string>
+			<key>name</key>
+			<string>constant.language.todotxt.priority</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Todo item context</string>
+			<key>match</key>
+			<string>\@\S*</string>
+			<key>name</key>
+			<string>entity.name.tag.todotxt.context</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Todo item project</string>
+			<key>match</key>
+			<string>\+\S*</string>
+			<key>name</key>
+			<string>entity.name.tag.todotxt.project</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Done Todo item</string>
+			<key>match</key>
+			<string>^x\s.*$</string>
+			<key>name</key>
+			<string>comment.line.todotxt</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.todotxt</string>
+	<key>uuid</key>
+	<string>8887f83b-c6dc-4d6c-909a-62bb008f1c8b</string>
+</dict>
+</plist>

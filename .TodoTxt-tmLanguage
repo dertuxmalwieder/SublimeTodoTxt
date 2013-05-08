@@ -1,0 +1,27 @@
+{ "name": "Todo.txt Syntax",
+  "scopeName": "text.todotxt",
+  "fileTypes": ["txt"],
+  "patterns": [
+  	{
+  		"match": "^\\([A-E]\\)",
+		"name": "constant.language.todotxt.priority",
+		"comment": "Todo item priority (can be set to A-E in the mobile application; should be enough for now)"
+	},
+	{
+  		"match": "\\@\\S*",
+		"name": "entity.name.tag.todotxt.context",
+		"comment": "Todo item context"
+	},
+	{
+  		"match": "\\+\\S*",
+		"name": "entity.name.tag.todotxt.project",
+		"comment": "Todo item project"
+	},
+	{
+  		"match": "^x\\s.*$",
+		"name": "comment.line.todotxt",
+		"comment": "Done Todo item"
+	}
+  ],
+  "uuid": "8887f83b-c6dc-4d6c-909a-62bb008f1c8b"
+}
