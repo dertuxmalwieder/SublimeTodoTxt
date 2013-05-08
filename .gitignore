@@ -165,3 +165,4 @@ pip-log.txt
 # project-relevant stuff
 *.URL
 *.url
+.TodoTxt-tmLanguage
