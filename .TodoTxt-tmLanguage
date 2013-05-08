@@ -1,4 +1,4 @@
-{ "name": "Todo.txt Syntax",
+{ "name": "Todo.txt",
   "scopeName": "text.todotxt",
   "fileTypes": ["txt"],
   "patterns": [
@@ -21,6 +21,11 @@
   		"match": "^x\\s.*$",
 		"name": "comment.line.todotxt",
 		"comment": "Done Todo item"
+	},
+	{
+  		"match": "^(\\([A-E]\\) )?(\\d{4}-\\d{2}-\\d{2} )?\\d{4}-\\d{2}-\\d{2}",
+		"name": "constant.numeric.todotxt.date",
+		"comment": "Todo item creation or done date"
 	}
   ],
   "uuid": "8887f83b-c6dc-4d6c-909a-62bb008f1c8b"

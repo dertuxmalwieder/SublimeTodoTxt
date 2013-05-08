@@ -7,7 +7,7 @@
 		<string>txt</string>
 	</array>
 	<key>name</key>
-	<string>Todo.txt Syntax</string>
+	<string>Todo.txt</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -41,6 +41,14 @@
 			<string>^x\s.*$</string>
 			<key>name</key>
 			<string>comment.line.todotxt</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Todo item creation or done date</string>
+			<key>match</key>
+			<string>^(\([A-E]\) )?(\d{4}-\d{2}-\d{2} )?\d{4}-\d{2}-\d{2}</string>
+			<key>name</key>
+			<string>constant.numeric.todotxt.date</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
