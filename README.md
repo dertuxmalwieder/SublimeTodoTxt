@@ -18,7 +18,7 @@ This repository contains everything that's needed to display plain Todo.txt file
 
 As Todo.txt is a rather simple format, I doubt that it's necessary to add any plug-in functionalities. Using menu items or shortcuts to change priorities and tags would probably be more effort than just changing the particular characters manually.
 
-I do, however, plan to keep up with Sublime Text development, so once ST4 comes out and breaks stuff, I'll most likely be ready.
+I do, however, plan to keep up with Sublime Text development, so once ST4 comes out and breaks stuff, I'll most likely be ready. In case there are any wishes, please drop by in the [forum thread](http://www.sublimetext.com/forum/viewtopic.php?f=5&t=12293) for SublimeTodoTxt. :-)
 
 ## Contact ##
 
