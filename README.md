@@ -1,6 +1,14 @@
 # SublimeTodoTxt #
 
-This is [Todo.txt](http://todotxt.com) syntax highlighting support for [Sublime Text 3](http://www.sublimetext.com).
+This is [Todo.txt](http://todotxt.com) syntax highlighting support for [Sublime Text](http://www.sublimetext.com) (tested with Sublime Text 3).
+
+![](Screenshot.png)
+
+## Background ##
+
+I am currently using Todo.txt exclusively to manage all tasks which don't necessarily need to be set to a specific date (which is something the Todo.txt format can't handle by default). While there are some really great mobile apps for managing the Todo.txt file (via Dropbox), all available Windows GUIs are crap.
+
+On the other hand, Todo.txt is a plain text format, so why waste GUI overhead? So I decided to add Todo.txt highlighting to Sublime Text.
 
 ## Current state ##
 
@@ -8,7 +16,9 @@ This repository contains everything that's needed to display plain Todo.txt file
 
 ## Future development ##
 
-As Todo.txt is a rather simple format, I doubt that it's necessary to add any plug-in functionalities. I do, however, plan to keep up with Sublime Text development, so once ST4 comes out, I'll most likely be ready.
+As Todo.txt is a rather simple format, I doubt that it's necessary to add any plug-in functionalities. Using menu items or shortcuts to change priorities and tags would probably be more effort than just changing the particular characters manually.
+
+I do, however, plan to keep up with Sublime Text development, so once ST4 comes out and breaks stuff, I'll most likely be ready.
 
 ## Contact ##
 
@@ -16,4 +26,4 @@ I'm [tux.](http://www.sublimetext.com/forum/memberlist.php?mode=viewprofile&u=15
 
 ## Make me rich! ##
 
-In case you are German and like what I did, feel free to install my [Amazon.de partner script](http://home.arcor.de/der_tuxman/userscripts/hf20.partnerlinks.user.js) (requires userscript support in your browser, like Firefox with the Greasemonkey extension) which adds my "tag" to all Amazon.de links. You can also lend me some Bitcoins, the preferred address is *1FJngJTiBiidA2HZ81xS9FGdrQmbQe2BHY*.
+In case you are German and like what I do, feel free to install my [Amazon.de partner script](http://home.arcor.de/der_tuxman/userscripts/hf20.partnerlinks.user.js) (requires userscript support in your browser, like Firefox with the Greasemonkey extension) which adds my "tag" to all Amazon.de links. You can also lend me some Bitcoins, the preferred address is *1FJngJTiBiidA2HZ81xS9FGdrQmbQe2BHY*.

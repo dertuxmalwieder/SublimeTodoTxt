@@ -4,7 +4,7 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>txt</string>
+		<string>Todo.txt</string>
 	</array>
 	<key>name</key>
 	<string>Todo.txt</string>
@@ -44,9 +44,9 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Todo item creation or done date</string>
+			<string>Todo item done or creation date</string>
 			<key>match</key>
-			<string>^(\([A-E]\) )?(\d{4}-\d{2}-\d{2} )?\d{4}-\d{2}-\d{2}</string>
+			<string> ([1-2][0-9][0-9][0-9]-[0-1][0-9]-[0-3][0-9] ){1,2}</string>
 			<key>name</key>
 			<string>constant.numeric.todotxt.date</string>
 		</dict>
