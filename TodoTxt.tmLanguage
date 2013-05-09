@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>Todo.txt</string>
+		<string>todo.txt</string>
 	</array>
 	<key>name</key>
 	<string>Todo.txt</string>
