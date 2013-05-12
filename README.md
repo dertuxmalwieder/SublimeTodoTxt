@@ -2,7 +2,7 @@
 
 This is [Todo.txt](http://todotxt.com) syntax highlighting support for [Sublime Text](http://www.sublimetext.com) (tested with Sublime Text 3).
 
-![](Screenshot.png)
+![Screenshot](Screenshot.png)
 
 ## Background ##
 
