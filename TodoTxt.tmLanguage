@@ -51,6 +51,22 @@
 			<key>name</key>
 			<string>constant.numeric.todotxt.date</string>
 		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Todo item due date</string>
+			<key>match</key>
+			<string>DUE:([1-2][0-9][0-9][0-9]-[0-1][0-9]-[0-3][0-9]</string>
+			<key>name</key>
+			<string>constant.numeric.todotxt.date</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Todo WAIT command</string>
+			<key>match</key>
+			<string>[^\S]WAIT[^\S]</string>
+			<key>name</key>
+			<string>keyword.other.todotxt.wait/string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>text.todotxt</string>
