@@ -65,7 +65,7 @@
 			<key>match</key>
 			<string>[^\S]WAIT[^\S]</string>
 			<key>name</key>
-			<string>keyword.other.todotxt.wait/string>
+			<string>keyword.other.todotxt.wait</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
