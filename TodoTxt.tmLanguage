@@ -55,7 +55,7 @@
 			<key>comment</key>
 			<string>Todo item due date</string>
 			<key>match</key>
-			<string>DUE:([1-2][0-9][0-9][0-9]-[0-1][0-9]-[0-3][0-9]</string>
+			<string>DUE:([1-2][0-9][0-9][0-9]-[0-1][0-9]-[0-3][0-9])</string>
 			<key>name</key>
 			<string>constant.numeric.todotxt.date</string>
 		</dict>
