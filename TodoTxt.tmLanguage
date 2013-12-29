@@ -47,7 +47,7 @@
 			<key>comment</key>
 			<string>Todo item done or creation date</string>
 			<key>match</key>
-			<string>([1-2][0-9][0-9][0-9]-[0-1][0-9]-[0-3][0-9] ){1,2}</string>
+			<string>([1-2]\d{3}[-/\\.](0?[1-9]|1[012])[-/\\.](0[1-9]|[12]\d|3[01]) ){1,2}</string>
 			<key>name</key>
 			<string>constant.numeric.todotxt.date</string>
 		</dict>
@@ -55,7 +55,7 @@
 			<key>comment</key>
 			<string>Todo item due date</string>
 			<key>match</key>
-			<string>DUE:([1-2][0-9][0-9][0-9]-[0-1][0-9]-[0-3][0-9])</string>
+			<string>(?i:DUE):([1-2]\d{3}[-/\\.](0?[1-9]|1[012])[-/\\.](0[1-9]|[12]\d|3[01]))</string>
 			<key>name</key>
 			<string>constant.numeric.todotxt.date</string>
 		</dict>
@@ -63,7 +63,7 @@
 			<key>comment</key>
 			<string>Todo WAIT command</string>
 			<key>match</key>
-			<string>[^\S]WAIT[^\S]</string>
+			<string>[^\S](?i:WAIT)[^\S]</string>
 			<key>name</key>
 			<string>keyword.other.todotxt.wait</string>
 		</dict>
