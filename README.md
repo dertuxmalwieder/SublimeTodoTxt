@@ -14,6 +14,16 @@ On the other hand, Todo.txt is a plain text format, so why waste GUI overhead? S
 
 This repository contains everything that's needed to display plain Todo.txt files correctly.
 
+## Useful tricks ##
+
+If you want Sublime Text to automatically save your todo.txt file when the window loses its focus, just create a file named `TodoTxt.sublime-settings` in your `User` package, its contents are:
+
+    {
+       "save_on_focus_lost": true
+    }
+    
+Now you're done.
+
 ## Future development ##
 
 As Todo.txt is a rather simple format, I doubt that it's necessary to add any plug-in functionalities. Using menu items or shortcuts to change priorities and tags would probably be more effort than just changing the particular characters manually.
