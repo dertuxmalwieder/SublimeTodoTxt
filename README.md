@@ -16,7 +16,7 @@ This repository contains everything that's needed to display plain Todo.txt file
 
 ## Useful tricks ##
 
-If you want Sublime Text to automatically save your todo.txt file when the window loses its focus, just create a file named `TodoTxt.sublime-settings` in your `User` package, its contents are:
+If you want Sublime Text to automatically save your Todo.txt file when the window loses its focus, just create a file named `TodoTxt.sublime-settings` in your `User` package, its contents are:
 
     {
        "save_on_focus_lost": true
