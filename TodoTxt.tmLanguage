@@ -13,9 +13,9 @@
 	<array>
 		<dict>
 			<key>comment</key>
-			<string>Todo item priority (can be set to A-E in the mobile application; should be enough for now)</string>
+			<string>Todo item priority</string>
 			<key>match</key>
-			<string>^\([A-E]\)</string>
+			<string>^\([A-Z]\)</string>
 			<key>name</key>
 			<string>constant.language.todotxt.priority</string>
 		</dict>
