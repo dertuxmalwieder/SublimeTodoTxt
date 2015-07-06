@@ -22,7 +22,7 @@ SublimeTodoTxt is available from wbond's [Package Control](https://packagecontro
 
 #### manually ####
 
-If you don't want to use Package Control, just copy the syntax file info your Packages directory.
+If you don't want to use Package Control, just copy the syntax file into your Packages directory.
 
 ## Useful tricks ##
 
