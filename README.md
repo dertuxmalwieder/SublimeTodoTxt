@@ -14,6 +14,16 @@ On the other hand, Todo.txt is a plain text format, so why waste GUI overhead? S
 
 This repository contains everything that's needed to display plain Todo.txt files correctly.
 
+### Installation ###
+
+#### via Package Control (recommended) ####
+
+SublimeTodoTxt is available from wbond's [Package Control](https://packagecontrol.io/) plug-in, you can find it as [Todo.txt Syntax](https://packagecontrol.io/packages/Todo.txt%20Syntax).
+
+#### manually ####
+
+If you don't want to use Package Control, just comy the syntax file info your Packages directory.
+
 ## Useful tricks ##
 
 If you want Sublime Text to automatically save your Todo.txt file when the window loses its focus, just create a file named `TodoTxt.sublime-settings` in your `User` package, its contents are:
