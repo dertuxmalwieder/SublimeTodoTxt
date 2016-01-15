@@ -28,11 +28,11 @@ Now you're done.
 
 As Todo.txt is a rather simple format, I doubt that it's necessary to add any plug-in functionalities. Using menu items or shortcuts to change priorities and tags would probably be more effort than just changing the particular characters manually.
 
-I do, however, plan to keep up with Sublime Text development, so once ST4 comes out and breaks stuff, I'll most likely be ready. In case there are any wishes, please drop by in the [forum thread](http://www.sublimetext.com/forum/viewtopic.php?f=5&t=12293) for SublimeTodoTxt. :-)
+I do, however, plan to keep up with Sublime Text development, so once ST4 comes out and breaks stuff, I'll most likely be ready. In case there are any wishes, please drop by in the [forum thread](https://forum.sublimetext.com/t/sublimetodotxt-todo-txt-syntax-highlighting/10003) for SublimeTodoTxt. :-)
 
 ## Contact ##
 
-I'm [tux.](http://www.sublimetext.com/forum/memberlist.php?mode=viewprofile&u=1548) in the Sublime Text forums. Feel free to get in touch with me. I wear some pants most of the time.
+I'm *tux* in the Sublime Text forums. Feel free to get in touch with me. I wear some pants most of the time.
 
 ## Make me rich! ##
 
