@@ -33,7 +33,7 @@
 			<key>match</key>
 			<string>\+\S*</string>
 			<key>name</key>
-			<string>entity.name.tag.todotxt.project</string>
+			<string>entity.name.function.todotxt.project</string>
 		</dict>
 		<dict>
 			<key>comment</key>
