@@ -23,7 +23,7 @@
 			<key>comment</key>
 			<string>Todo item context</string>
 			<key>match</key>
-			<string>\s\@\S*</string>
+			<string>(^\@\S*)|(\s\@\S*)</string>
 			<key>name</key>
 			<string>entity.name.tag.todotxt.context</string>
 		</dict>
@@ -31,7 +31,7 @@
 			<key>comment</key>
 			<string>Todo item project</string>
 			<key>match</key>
-			<string>\s\+\S*</string>
+			<string>(^\+\S*)|(\s\+\S*)</string>
 			<key>name</key>
 			<string>entity.name.function.todotxt.project</string>
 		</dict>
