@@ -2,22 +2,50 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>name</key>
+	<string>Todo.txt</string>
 	<key>fileTypes</key>
 	<array>
+		<string>Todo.txt</string>
 		<string>todo.txt</string>
 		<string>done.txt</string>
 	</array>
-	<key>name</key>
-	<string>Todo.txt</string>
 	<key>patterns</key>
 	<array>
+		<!-- added by tkout -->
 		<dict>
 			<key>comment</key>
-			<string>Todo item priority</string>
+			<string>A heading, markdown style (note: not part of the original todo.txt syntax)</string>
 			<key>match</key>
-			<string>^\([A-Z]\)</string>
+			<string>^#.*$</string>
+			<key>name</key>
+			<string>support.function.source.todotxt.heading</string>
+		</dict>
+		<!-- added by tkout -->
+		<dict>
+			<key>comment</key>
+			<string>A comment line (note: not part of the original todo.txt syntax)</string>
+			<key>match</key>
+			<string>^\>.*$</string>
+			<key>name</key>
+			<string>comment.line.todotxt</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Todo item priority (can be set to A-E in the mobile application; should be enough for now)</string>
+			<key>match</key>
+			<string>^\([A-E]\)</string>
 			<key>name</key>
 			<string>constant.language.todotxt.priority</string>
+		</dict>
+		<!-- Special context (@@value) -->
+		<dict>
+			<key>comment</key>
+			<string>Todo item special context</string>
+			<key>name</key>
+			<string>invalid.illegal.special.todotxt</string>
+			<key>match</key>
+			<string>\@\@\S*</string>
 		</dict>
 		<dict>
 			<key>comment</key>
