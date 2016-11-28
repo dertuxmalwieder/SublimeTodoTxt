@@ -47,7 +47,7 @@
 			<key>comment</key>
 			<string>Todo item done or creation date</string>
 			<key>match</key>
-			<string>([1-2]\d{3}[-/\\.](0?[1-9]|1[012])[-/\\.](0[1-9]|[12]\d|3[01]) ){1,2}</string>
+			<string>([1-2]\d{3}[-/\\.](0?[1-9]|1[012])[-/\\.](0[1-9]|[12]\d|3[01])){1,2}</string>
 			<key>name</key>
 			<string>constant.numeric.todotxt.date</string>
 		</dict>
