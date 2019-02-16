@@ -1,0 +1,9 @@
+{
+    "auto_complete": true,
+    "auto_complete_triggers": [
+        {
+            "selector": "text.todotxt",
+            "characters": "@+"
+        }
+    ]
+}
