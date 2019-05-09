@@ -13,24 +13,32 @@ contexts:
     - match: '^\([A-Z]\)'
       comment: Todo item priority
       scope: constant.language.todotxt.priority
+
     - match: (^\@\S+)|(\s\@\S+)
       comment: Todo item context
       scope: entity.name.tag.todotxt.context
+
     - match: (^\+\S+)|(\s\+\S+)
       comment: Todo item project
-      scope: entity.name.class.todotxt.project
+      scope: string.quoted.double.todotxt.project
+
     - match: ^x\s.*$
       comment: Done Todo item
       scope: comment.line.todotxt
+
     - match: '{{date}}(?= ){1,2}'
       comment: Todo item done or creation date
       scope: constant.numeric.todotxt.date
-    - match: '(?i:DUE):{{date}}'
-      comment: Todo item due date
-      scope: constant.numeric.todotxt.date
+
+    - match: '(\s[^\s:]+:[^\s:]+)*$'
+      comment: Custom attributes
+      scope: variable.annotation.todotxt.attribute
+
     - match: '\b(?i:WAIT)\b'
       comment: Todo WAIT command
       scope: keyword.other.todotxt.wait
+
     - match: '(?:[^x])((?!\s([@\+])|(due:)|(wait)|({{date}})).)+'
       comment: Todo item text
       scope: entity.task.todotxt
+
