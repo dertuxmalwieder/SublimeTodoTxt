@@ -40,10 +40,6 @@ As Todo.txt is a rather simple format, I doubt that it's necessary to add any pl
 
 I do, however, plan to keep up with Sublime Text development, so once ST4 comes out and breaks stuff, I'll most likely be ready. In case there are any wishes, please drop by in the [forum thread](https://forum.sublimetext.com/t/sublimetodotxt-todo-txt-syntax-highlighting/10003) for SublimeTodoTxt. :-)
 
-## Contact ##
-
-I'm *tux* in the Sublime Text forums. Feel free to get in touch with me. I wear some pants most of the time.
-
 ## Make me rich! ##
 
-In case you are German and like what I do, feel free to install my [Amazon.de partner script](http://home.arcor.de/der_tuxman/userscripts/hf20.partnerlinks.user.js) (requires userscript support in your browser, like Firefox with the Greasemonkey extension) which adds my "tag" to all Amazon.de links. You can also lend me some Bitcoins, the preferred address is *1FJngJTiBiidA2HZ81xS9FGdrQmbQe2BHY*.
+In case you are German and like what I do, feel free to install my [Amazon.de partner script](https://tuxproject.de/projects/vim/hf20.partnerlinks.user.js) (requires userscript support in your browser, like Firefox with the Greasemonkey extension) which adds my "tag" to all Amazon.de links. You can also lend me some Bitcoins, the preferred address is *1FJngJTiBiidA2HZ81xS9FGdrQmbQe2BHY*.
