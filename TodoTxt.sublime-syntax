@@ -22,7 +22,7 @@ contexts:
       comment: Todo item project
       scope: string.quoted.double.todotxt.project
 
-    - match: ^x\s.*$
+    - match: ^\s*x\s.*$
       comment: Done Todo item
       scope: comment.line.todotxt
 
