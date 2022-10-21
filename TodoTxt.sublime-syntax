@@ -1,44 +1,71 @@
 %YAML 1.2
 ---
-# http://www.sublimetext.com/docs/3/syntax.html
+# See http://www.sublimetext.com/docs/3/syntax.html
 name: Todo.txt
 file_extensions:
   - todo.txt
   - done.txt
 scope: text.todotxt
 variables:
-  date: ([1-2]\d{3}[-/\\.](0?[1-9]|1[012])[-/\\.](0[1-9]|[12]\d|3[01]))
+  date: (?:[1-2]\d{3}[-/\\.](?:0?[1-9]|1[012])[-/\\.](?:0[1-9]|[12]\d|3[01]))
 contexts:
   main:
-    - match: '^\([A-Z]\)'
-      comment: Todo item priority
-      scope: constant.language.todotxt.priority
+    - include: task_done
+    - include: task_todo
 
-    - match: (^\@\S+)|(\s\@\S+)
-      comment: Todo item context
-      scope: entity.name.tag.todotxt.context
 
-    - match: (^\+\S+)|(\s\+\S+)
-      comment: Todo item project
-      scope: string.quoted.double.todotxt.project
-
-    - match: ^\s*x\s.*$
-      comment: Done Todo item
+  task_done:
+    # Complex regexp:
+    # - 'x ' is required
+    # - then goes optional Completion date
+    #   - then goes optional Creation date
+    - match: ^\s*x\s+(?:({{date}})\s+(?:({{date}})\s+)?)?
+      comment: Todo done item
       scope: comment.line.todotxt
+      captures:
+        1: constant.numeric.todotxt.date
+        2: constant.numeric.todotxt.date
+      push:
+        - meta_scope: comment.line.todotxt
+        - include: inside_task
+        - match: $\n?
+          pop: true
 
-    - match: '{{date}}(?= ){1,2}'
-      comment: Todo item done or creation date
-      scope: constant.numeric.todotxt.date
 
-    - match: '(\s[^\s:]+:[^\s:]+)*$'
-      comment: Custom attributes
-      scope: variable.annotation.todotxt.attribute
+  task_todo:
+    # Complex regexp:
+    # - the whole regexp is optional
+    # - firstly goes optional Priority
+    # - then goes Creation date
+    - match: '^(?:\s*(?:(\([A-Z]\))\s+)?(?:({{date}})\s+)?)?'
+      comment: Todo item undone
+      captures:
+        1: invalid.deprecated.todotxt
+        2: constant.language.todotxt.priority
+      push:
+        - meta_scope: entity.task.todotxt
+        - include: inside_task
+        - match: $\n?
+          pop: true
 
+
+  inside_task:
+    - match: (?:\s|^)(\@\S+)
+      comment: Todo item context
+      captures:
+        1: entity.name.tag.todotxt.context
+
+    - match: (?:\s|^)(\+\S+)
+      comment: Todo item project
+      captures:
+        1: string.quoted.double.todotxt.project
+
+    # Non standard WAIT
     - match: '\b(?i:WAIT)\b'
       comment: Todo WAIT command
       scope: keyword.other.todotxt.wait
 
-    - match: '(?:[^x])((?!\s([@\+])|(due:)|(wait)|({{date}})).)+'
-      comment: Todo item text
-      scope: entity.task.todotxt
+    - match: (\s+[^\s:]+:[^\s:]+)+\s*$
+      comment: Custom attributes
+      scope: variable.annotation.todotxt.attribute
 
