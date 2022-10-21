@@ -10,6 +10,7 @@ variables:
   date: (?:[1-2]\d{3}[-/\\.](?:0?[1-9]|1[012])[-/\\.](?:0[1-9]|[12]\d|3[01]))
 contexts:
   main:
+    - include: comments
     - include: task_done
     - include: task_todo
 
@@ -69,3 +70,12 @@ contexts:
       comment: Custom attributes
       scope: variable.annotation.todotxt.attribute
 
+  comments:
+    # Comments begin with a '//' and finish at the end of the line.
+    - match: //
+      scope: punctuation.definition.comment.example-c
+      push:
+        # This is an anonymous context push for brevity.
+        - meta_scope: comment.line.double-slash.example-c
+        - match: $\n?
+          pop: true
