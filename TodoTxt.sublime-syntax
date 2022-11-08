@@ -51,12 +51,12 @@ contexts:
 
 
   inside_task:
-    - match: (?:\s|^)(\@\S+)
+    - match: (?:\s|^|\G)(\@\S+)
       comment: Todo item context
       captures:
         1: entity.name.tag.todotxt.context
 
-    - match: (?:\s|^)(\+\S+)
+    - match: (?:\s|^|\G)(\+\S+)
       comment: Todo item project
       captures:
         1: string.quoted.double.todotxt.project
