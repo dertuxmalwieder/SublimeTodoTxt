@@ -5,6 +5,7 @@ name: Todo.txt
 file_extensions:
   - todo.txt
   - done.txt
+  - todotxt
 scope: text.todotxt
 variables:
   date: (?:[1-2]\d{3}[-/\\.](?:0?[1-9]|1[012])[-/\\.](?:0[1-9]|[12]\d|3[01]))
